@@ -1,0 +1,31 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 12px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  white-space: nowrap;
+}
+
+.running {
+  background: var(--teal-soft);
+  color: var(--teal-ink);
+}
+
+.idle {
+  background: var(--idle-soft);
+  color: var(--text-2);
+}
+
+.terra {
+  background: var(--terra-soft);
+  color: var(--terra-ink);
+}
+
+.solar {
+  background: var(--sun-soft);
+  color: var(--sun-ink);
+}

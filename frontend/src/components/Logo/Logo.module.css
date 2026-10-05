@@ -1,0 +1,55 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bar {
+  fill: #3b2416;
+}
+
+.square {
+  fill: var(--cocoa);
+}
+
+.squareSun {
+  fill: var(--sun);
+}
+
+.wordmarkBlock {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.tagline {
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+/* Light tone (used on the dark sidebar) */
+.wrapper[data-tone='light'] .bar {
+  fill: #f5ede0;
+}
+
+.wrapper[data-tone='light'] .square {
+  fill: #e2d3bd;
+}
+
+.wrapper[data-tone='light'] .squareSun {
+  fill: var(--sun);
+}
+
+.wrapper[data-tone='light'] .wordmark {
+  color: #f5ede0;
+}
+
+.wrapper[data-tone='light'] .tagline {
+  color: var(--side-muted);
+}

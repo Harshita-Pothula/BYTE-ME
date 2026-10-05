@@ -1,0 +1,57 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+}
+
+.tariffList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tariffRow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tariffHeading {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) minmax(90px, 1fr) minmax(100px, 1fr);
+  align-items: baseline;
+  gap: 12px;
+}
+
+.tariffHeading > :nth-child(2) {
+  color: var(--text-2);
+}
+
+.tariffHeading > :last-child {
+  text-align: right;
+}
+
+.allocationNote {
+  margin: 18px 0 0;
+  color: var(--text-2);
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tariffHeading {
+    grid-template-columns: minmax(80px, 1fr) auto auto;
+    gap: 8px;
+    font-size: 13px;
+  }
+}

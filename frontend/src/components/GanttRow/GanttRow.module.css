@@ -1,0 +1,107 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.label {
+  width: 130px;
+  flex: 0 0 130px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--chocolate);
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.label strong,
+.label span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.label span {
+  color: var(--text-2);
+  font-size: 13px;
+}
+
+.compactRow .label {
+  width: 104px;
+  flex-basis: 104px;
+}
+
+.track {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  border-radius: 8px;
+  background: var(--gantt-track);
+}
+
+.block {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  overflow: hidden;
+  padding: 0 8px;
+  border-radius: 6px;
+  color: var(--milk);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 34px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.compact {
+  top: 3px;
+  bottom: 3px;
+  padding: 0 6px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.lanedBlock {
+  line-height: 28px;
+}
+
+.roast {
+  background: var(--caramel);
+}
+
+.grind {
+  background: var(--teal);
+}
+
+.conche {
+  background: var(--sun);
+  color: var(--espresso);
+}
+
+.temper {
+  background: var(--plum);
+}
+
+.mould {
+  background: var(--toffee);
+  color: var(--espresso);
+}
+
+.pack {
+  background: var(--olive);
+}
+
+.shifted {
+  outline: 2px dashed var(--espresso);
+  outline-offset: 2px;
+}
+
+@media (max-width: 700px) {
+  .label {
+    width: 104px;
+    flex-basis: 104px;
+  }
+}

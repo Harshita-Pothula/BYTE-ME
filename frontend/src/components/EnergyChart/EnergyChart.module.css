@@ -1,0 +1,92 @@
+.energyChart {
+  min-width: 0;
+}
+
+.chartScroller {
+  min-width: 0;
+  overflow-x: auto;
+}
+
+.chartInner {
+  min-width: 480px;
+}
+
+.chartBars {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  border-bottom: 1.5px solid var(--line-strong);
+}
+
+.chartColumn {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.solarBar,
+.gridBar {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.solarBar {
+  border-radius: 3px 3px 0 0;
+  background: var(--sun);
+}
+
+.gridBar {
+  background: var(--grid-brown);
+}
+
+.gridBarTop {
+  border-radius: 3px 3px 0 0;
+}
+
+.tariffStrip,
+.hourLabels {
+  display: flex;
+  gap: 4px;
+}
+
+.tariffStrip {
+  margin-top: 6px;
+}
+
+.tariffBar {
+  height: 8px;
+  flex: 1;
+  border-radius: 2px;
+}
+
+.tariff-peak {
+  background: var(--terracotta);
+}
+
+.tariff-mid {
+  background: var(--tariff-mid);
+}
+
+.tariff-off {
+  background: var(--tariff-off);
+}
+
+.hourLabels {
+  margin-top: 4px;
+}
+
+.hourLabels span {
+  min-width: 0;
+  flex: 1;
+  color: var(--text-2);
+  font-size: 13px;
+  text-align: center;
+}
+
+.chartNote {
+  margin: 14px 0 0;
+  color: var(--text-2);
+  font-size: 15px;
+}

@@ -1,0 +1,151 @@
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.timelineScroller,
+.tableScroller {
+  overflow-x: auto;
+}
+
+.timelineInner {
+  min-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tariffRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tariffRow > strong {
+  width: 130px;
+  flex: 0 0 130px;
+  color: var(--text-2);
+  font-size: 13px;
+}
+
+.tariffBars {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(24, minmax(0, 1fr));
+  gap: 2px;
+}
+
+.tariffBar {
+  height: 14px;
+  border-radius: 3px;
+}
+
+.tariff-peak {
+  background: var(--terracotta);
+}
+
+.tariff-mid {
+  background: var(--tariff-mid);
+}
+
+.tariff-off {
+  background: var(--tariff-off);
+}
+
+.ruler {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  margin-left: 140px;
+  color: var(--text-2);
+  font-size: 13px;
+}
+
+.ruler span {
+  text-align: center;
+}
+
+.machineRows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tableScroller {
+  width: 100%;
+}
+
+.shiftTable {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  font-size: 15px;
+  text-align: left;
+}
+
+.shiftTable thead {
+  color: var(--text-2);
+  font-size: 14px;
+}
+
+.shiftTable thead tr {
+  border-bottom: 1.5px solid var(--line-strong);
+}
+
+.shiftTable th,
+.shiftTable td {
+  padding: 12px;
+  border-bottom: 1px solid var(--line-soft);
+  white-space: nowrap;
+}
+
+.shiftTable tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.shiftTable tbody th {
+  font-weight: 700;
+}
+
+.was {
+  color: var(--text-2);
+}
+
+.now {
+  font-weight: 700;
+}
+
+.saved {
+  color: var(--teal);
+  font-weight: 700;
+  text-align: right;
+}
+
+.emptySchedule {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 8px 0;
+}
+
+.emptySchedule p {
+  margin: 0;
+  color: var(--text-2);
+}
+
+.optimizationError {
+  margin: 0 0 14px;
+  color: var(--terra-ink);
+}
+
+@media (max-width: 700px) {
+  .ruler {
+    margin-left: 114px;
+  }
+
+  .tariffRow > strong {
+    width: 104px;
+    flex-basis: 104px;
+  }
+}

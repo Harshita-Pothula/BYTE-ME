@@ -1,0 +1,108 @@
+/* ============================================================
+   ByteMe design tokens — single source of truth.
+   Values come from the "ByteMe Frontend — Phased Build Prompts"
+   master context. Use these variables; never hard-code colours.
+   ============================================================ */
+
+:root {
+  /* ---- Core neutrals ---- */
+  --espresso: #2a1b12; /* main text */
+  --chocolate: #3b2416; /* sidebar, dark buttons */
+  --chocolate-2: #4a2f1e; /* sidebar inputs and cards */
+  --cocoa: #5a3a26; /* logo squares */
+  --cream: #f5ede0; /* page background */
+  --milk: #fffaf2; /* cards */
+  --sand: #efe3d0; /* secondary button hover, 3D slot background */
+  --white: #ffffff; /* field control background, selected tiles */
+
+  /* ---- Brand / accent ---- */
+  --caramel: #8a4b22; /* primary buttons, links */
+  --caramel-hover: #6b3717; /* primary button hover */
+  --link-dark: #5e3115; /* dark link text, secondary button text */
+  --toffee: #b07a4f; /* borders, secondary accents */
+  --tan: #b9a48a; /* baseline bars, idle status */
+  --grid-brown: #6e4b35; /* grid energy */
+
+  /* ---- Lines & tracks ---- */
+  --line: #e2d3bd; /* card borders */
+  --line-strong: #cdb89c; /* input borders, table header line */
+  --line-soft: #eadcc6; /* table rows, segmented-toggle track */
+  --track: #f0e5d4; /* progress bar track */
+  --gantt-track: #f3eadc; /* Gantt track background */
+
+  /* ---- Text ---- */
+  --text-2: #5c4433; /* secondary text */
+  --text-3: #6a4f3b; /* eyebrow labels */
+  --side-text: #f2e6d4; /* sidebar text */
+  --side-muted: #d9c6ac; /* sidebar secondary text */
+  --side-hover: rgba(245, 237, 224, 0.1); /* sidebar link hover */
+  --side-input-border: #6b4a35; /* sidebar select border */
+  --side-card-text: #eadcc6; /* sidebar bottom card text */
+  --disabled: #a8927a; /* disabled text on light surfaces */
+
+  /* ---- Status: solar ---- */
+  --sun: #e3a72f; /* solar energy, active nav item */
+  --sun-soft: #fbefcb;
+  --sun-ink: #6b4a0e;
+
+  /* ---- Status: success / running / optimized ---- */
+  --teal: #1e6e68; /* optimized, savings, running */
+  --teal-soft: #dcedea;
+  --teal-ink: #145550;
+
+  /* ---- Status: alert / peak / maintenance ---- */
+  --terracotta: #c2502e; /* peak price, alerts, maintenance */
+  --terra-soft: #f6dcd2;
+  --terra-ink: #93361c;
+
+  /* ---- Tariff bands ---- */
+  --tariff-mid: #e8b59b; /* mid tariff */
+  --tariff-off: #e6d8c2; /* off-peak tariff */
+
+  /* ---- Misc surfaces ---- */
+  --idle-soft: #eee3d3; /* idle chip background (text --text-2) */
+
+  /* ---- Extra process colours ---- */
+  --plum: #6b3a5b;
+  --olive: #5e6f38;
+
+  /* ---- Focus ring ---- */
+  --focus-ring: #e3a72f;
+
+  /* ---- 2D floor plan (Phase 9) ---- */
+  --floor-bg: #f3eadc;
+  --floor-grid: #e8dac4;
+  --zone-border: #c9ae8c;
+  --floor-card: rgba(255, 250, 242, 0.75);
+  --solar-bar-track: #f3dfa6;
+  --grid-bar-track: #dccbB3; /* spec: #DCCBB3 */
+  --tile-hover-shadow: 0 4px 14px rgba(59, 36, 22, 0.14);
+
+  /* ---- Fonts ---- */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
+
+  /* ---- Type scale ---- */
+  --fs-page-title: 36px;
+  --fs-card-title: 22px;
+  --fs-kpi: 34px;
+  --fs-body: 16px;
+  --fs-secondary: 15px;
+  --fs-caption: 13px;
+  --eyebrow-spacing: 0.06em;
+
+  /* ---- Radii ---- */
+  --radius-card: 16px;
+  --radius-tile: 14px;
+  --radius-control: 10px;
+  --radius-pill: 999px;
+
+  /* ---- Spacing ---- */
+  --gap-section: 24px;
+  --gap-grid: 16px;
+  --pad-card: 20px;
+  --control-h: 44px;
+  --page-pad-top: 28px;
+  --page-pad-x: clamp(16px, 3vw, 40px);
+  --page-pad-bottom: 48px;
+}

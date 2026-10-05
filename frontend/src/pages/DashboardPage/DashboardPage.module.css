@@ -1,0 +1,165 @@
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.twoColumnGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.ganttScroller {
+  overflow-x: auto;
+}
+
+.optimizationError {
+  margin: 0;
+  color: var(--terra-ink);
+}
+
+.timelineLink {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ganttInner {
+  min-width: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timeAxis {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 114px;
+  color: var(--text-2);
+  font-size: 13px;
+}
+
+.machineList {
+  display: flex;
+  flex-direction: column;
+}
+
+.machineRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.machineRow:first-child {
+  padding-top: 0;
+}
+
+.machineRow:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.machineDetails {
+  min-width: 130px;
+  flex: 1 1 130px;
+  display: flex;
+  flex-direction: column;
+}
+
+.machineDetails > span {
+  color: var(--text-2);
+  font-size: 14px;
+}
+
+.utilization {
+  flex: 1 1 170px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.utilization > :first-child {
+  flex: 1;
+}
+
+.utilization > strong {
+  width: 44px;
+  color: var(--espresso);
+  font-size: 15px;
+  text-align: right;
+}
+
+.modelSlot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  padding: 28px;
+  border: 2px dashed var(--toffee);
+  border-radius: 16px;
+  background: var(--sand);
+}
+
+.modelIcon {
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: var(--chocolate);
+  color: var(--sun);
+}
+
+.modelCopy {
+  flex: 1 1 320px;
+}
+
+.modelCopy h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.modelCopy p {
+  margin: 4px 0 0;
+  color: var(--text-2);
+}
+
+.modelLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.modelLinkButton {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border-radius: var(--radius-control);
+  background: var(--chocolate);
+  color: var(--milk);
+  font-weight: 700;
+}
+
+.modelLink:hover .modelLinkButton {
+  background: var(--chocolate-2);
+}
+
+@media (max-width: 600px) {
+  .modelSlot {
+    padding: 20px;
+  }
+
+  .machineRow {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,29 @@
+.card {
+  background: var(--milk);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  padding: var(--pad-card); /* 20px */
+}
+
+.headerRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--fs-card-title); /* 22px */
+  font-weight: 700;
+  color: var(--espresso);
+  margin: 0;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

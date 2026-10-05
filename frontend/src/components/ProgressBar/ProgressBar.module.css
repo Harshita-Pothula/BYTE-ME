@@ -1,0 +1,11 @@
+.track {
+  width: 100%;
+  background: var(--track);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.fill {
+  width: 0%;
+  transition: width 0.25s ease;
+}

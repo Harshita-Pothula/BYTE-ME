@@ -1,0 +1,74 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.timelineScroller,
+.tableScroller {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.timelineInner {
+  min-width: 660px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.timeAxis {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 140px;
+  color: var(--text-2);
+  font-size: 12px;
+}
+
+.shiftTable {
+  width: 100%;
+  min-width: 740px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.shiftTable th,
+.shiftTable td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+
+.shiftTable thead th {
+  color: var(--text-2);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.shiftTable tbody th {
+  color: var(--espresso);
+  font-weight: 700;
+}
+
+.shiftTable tbody td {
+  color: var(--text-2);
+  white-space: nowrap;
+}
+
+.noShifts {
+  padding: 18px 14px;
+  text-align: center;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

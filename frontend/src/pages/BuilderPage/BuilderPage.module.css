@@ -1,0 +1,433 @@
+.builderPage {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.stepper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stepPill {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px 0 8px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.stepNumber {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.current {
+  background: var(--chocolate);
+  color: var(--milk);
+}
+
+.current .stepNumber {
+  background: var(--sun);
+  color: var(--espresso);
+}
+
+.done {
+  background: var(--teal-soft);
+  color: var(--teal-ink);
+}
+
+.done .stepNumber {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.upcoming {
+  background: var(--line-soft);
+  color: var(--text-2);
+}
+
+.upcoming .stepNumber {
+  background: var(--milk);
+}
+
+.detailsCard {
+  padding: 22px;
+}
+
+.detailsCard > div:last-child {
+  gap: 18px;
+}
+
+.detailsFields {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+.helper {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 14px;
+}
+
+.tableScroller {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.machineTable {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.machineTable thead {
+  color: var(--text-2);
+  font-size: 14px;
+}
+
+.machineTable th,
+.machineTable td {
+  padding: 8px;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.machineTable tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.machineTable tbody th {
+  min-width: 140px;
+}
+
+.machineTable input[type='text'],
+.machineTable input[type='number'],
+.machineTable select,
+.processCard input,
+.processCard select {
+  min-height: 40px;
+  max-width: 100%;
+  border: 1.5px solid var(--line-strong);
+  border-radius: var(--radius-control);
+  background: var(--white);
+  padding: 0 10px;
+  color: var(--espresso);
+}
+
+.machineTable input:disabled,
+.machineTable select:disabled {
+  border-color: transparent;
+  background: transparent;
+  color: var(--espresso);
+  opacity: 1;
+}
+
+.machineTable select {
+  min-width: 112px;
+}
+
+.powerInput {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.powerInput input {
+  width: 76px;
+}
+
+.available {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.editButton {
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  padding: 0;
+  color: var(--caramel);
+}
+
+.editButton svg {
+  display: block;
+}
+
+.processHint {
+  color: var(--text-2);
+  font-size: 14px;
+}
+
+.processFlow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.processEntry {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.processCard {
+  min-width: 150px;
+  min-height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: var(--milk);
+}
+
+.processCard > label:first-child input {
+  width: 100%;
+  border-color: transparent;
+  background: transparent;
+  color: inherit;
+  font-weight: 700;
+}
+
+.processMeta,
+.processMeta > label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.processMeta select {
+  min-width: 0;
+  flex: 1;
+  height: 28px;
+  padding: 0 4px;
+  font-size: 12px;
+}
+
+.processMeta input {
+  width: 54px;
+  height: 28px;
+  min-height: 28px;
+  padding: 0 4px;
+  font-size: 12px;
+}
+
+.processMeta > label > span {
+  font-size: 12px;
+}
+
+.processColor0 {
+  background: var(--caramel);
+}
+
+.processColor1 {
+  background: var(--teal);
+}
+
+.processColor2 {
+  background: var(--sun);
+  color: var(--espresso);
+}
+
+.processColor3 {
+  background: var(--plum);
+}
+
+.processColor4 {
+  background: var(--olive);
+}
+
+.flowArrow {
+  display: inline-flex;
+  color: var(--caramel);
+}
+
+.processActions {
+  display: flex;
+  gap: 4px;
+}
+
+.processActions button {
+  width: 34px;
+  min-height: 34px;
+  padding: 0;
+}
+
+.addStep {
+  min-width: 150px;
+  min-height: 64px;
+  border: 2px dashed var(--toffee);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--link-dark);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.energyIntro {
+  margin: 0;
+  color: var(--text-2);
+}
+
+.energySummary,
+.reviewGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.energySummary > div,
+.reviewGrid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-control);
+  background: var(--milk);
+}
+
+.energySummary span,
+.reviewGrid dt {
+  color: var(--text-2);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.energySummary strong,
+.reviewGrid dd {
+  margin: 0;
+  color: var(--espresso);
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.energyBands {
+  display: grid;
+  grid-template-columns: repeat(24, minmax(0, 1fr));
+  gap: 3px;
+}
+
+.energyBands span {
+  height: 18px;
+  border-radius: 3px;
+}
+
+.tariff-peak {
+  background: var(--terracotta);
+}
+
+.tariff-mid {
+  background: var(--tariff-mid);
+}
+
+.tariff-off {
+  background: var(--tariff-off);
+}
+
+.energyCaption {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 14px;
+}
+
+.reviewGrid {
+  margin: 0;
+}
+
+.reviewLists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 20px;
+}
+
+.reviewLists h3 {
+  font-size: 18px;
+}
+
+.reviewLists ul,
+.reviewLists ol {
+  margin: 8px 0 0;
+  padding-left: 22px;
+  color: var(--text-2);
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.backLink {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footerActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.errorMessage,
+.successMessage {
+  margin: -12px 0 0;
+  font-weight: 700;
+}
+
+.errorMessage {
+  color: var(--terra-ink);
+}
+
+.successMessage {
+  color: var(--teal-ink);
+}
+
+@media (max-width: 600px) {
+  .detailsCard {
+    padding: 18px;
+  }
+
+  .stepPill {
+    padding-right: 12px;
+    font-size: 14px;
+  }
+
+  .processEntry {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,43 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: var(--fs-secondary);
+  font-weight: 700;
+  color: var(--espresso);
+}
+
+.control {
+  /* optionally valid for input or select */
+}
+
+.field input[type='text'],
+.field input[type='number'],
+.field input:not([type]),
+.field select {
+  width: 100%;
+  min-height: 46px;
+  border-radius: var(--radius-control);
+  border: 1.5px solid var(--line-strong);
+  background: var(--white);
+  padding: 0 14px;
+  color: var(--espresso);
+  font-size: 16px;
+}
+
+.field input::placeholder {
+  color: var(--text-2);
+}
+
+.field select {
+  appearance: auto;
+}
+
+.helper {
+  margin: 0;
+  font-size: var(--fs-secondary);
+  color: var(--text-2);
+}

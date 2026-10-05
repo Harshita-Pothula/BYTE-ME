@@ -1,0 +1,46 @@
+.compareList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.compareMetric {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.compareHeading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.compareHeading > span {
+  color: var(--teal-ink);
+  font-weight: 700;
+}
+
+.compareBarRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.compareBarRow > :first-child {
+  min-width: 0;
+  flex: 1;
+}
+
+.compareValue {
+  width: 84px;
+  flex: 0 0 84px;
+  color: var(--text-2);
+  font-size: 14px;
+  text-align: right;
+}
+
+.compareBarRow > strong.compareValue {
+  color: var(--espresso);
+}

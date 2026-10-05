@@ -1,0 +1,34 @@
+.group {
+  display: inline-flex;
+  background: var(--line-soft);
+  padding: 4px;
+  gap: 4px;
+  border-radius: 12px;
+}
+
+.option {
+  border: none;
+  background: transparent;
+  color: var(--text-2);
+  font-weight: 700;
+  font-size: inherit;
+  font-family: inherit;
+  min-height: var(--control-h);
+  padding: 0 20px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.option:hover:not(:disabled) {
+  /* subtle affordance; keep spec value */
+}
+
+.option[aria-pressed="true"] {
+  background: var(--chocolate);
+  color: var(--milk);
+}
+
+.option:disabled {
+  color: var(--disabled);
+  cursor: not-allowed;
+}
