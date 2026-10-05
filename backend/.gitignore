@@ -1,0 +1,27 @@
+node_modules/
+.next/
+out/
+build/
+coverage/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# Secrets — never commit
+.env
+.env.local
+.env.*.local
+
+# Offline SQLite database — local data, never commit
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+.DS_Store
+*.log
+npm-debug.log*
+.idea/
+.vscode/
+
+.freebuff/

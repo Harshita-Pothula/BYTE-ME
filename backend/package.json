@@ -1,0 +1,37 @@
+{
+  "name": "byteme-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ByteMe — generic, data-driven electricity scheduling backend for manufacturing clusters.",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "verify:db": "node scripts/verify-supabase.mjs",
+    "offline:seed": "vite-node --config vitest.config.ts scripts/seed-offline.ts",
+    "offline:token": "vite-node --config vitest.config.ts scripts/mint-offline-token.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "better-sqlite3": "^13.0.3",
+    "jose": "^6.2.12",
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^20.16.11",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.3"
+  }
+}
